@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./app.css";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
+        {/* Header at the top */}
+        <Header />
+        
+        {/* Main content area - flex-grow pushes footer to bottom */}
+        <main className="flex-grow">
+          {children}
+        </main>
+        
+        {/* Footer at the bottom */}
+        <Footer />
+      </body>
+
     </html>
   );
 }
