@@ -1,5 +1,5 @@
 import Navigation from './Navigation'
-import Logo from '@/components/ui/Logo'
+// import Logo from '@/components/ui/Logo'
 
 export default function Header() {
   return (
@@ -7,8 +7,10 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-6">
-            <Logo />
-            <Navigation />
+       
+            {/* <Logo /> */}
+            {/* <Navigation /> */}
+            
           </div>
           <div className="flex items-center gap-4">
             <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">
