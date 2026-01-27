@@ -32,7 +32,7 @@ export default function App() {
   }
 
   return (
-    <main>
+    
       <h1>My todos</h1>
       <button onClick={createTodo}>+ new</button>
       <ul>
@@ -47,6 +47,6 @@ export default function App() {
           Review next steps of this tutorial.
         </a>
       </div>
-    </main>
+    
   );
 }
